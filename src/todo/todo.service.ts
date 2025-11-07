@@ -10,9 +10,22 @@ export class TodoService {
     return 'This is for single todo id ' + id;
   }
 
-  saveTodo(title:string, description: string) {
-    return(
-        'sa'
-    )
+  saveTodo(title: string, description: string) {
+    return (
+      'save to do from service = ' + title + ' desc = ' + description
+);
+  };
+  updateTodo(id: string, title: string, description: string) {
+    return (
+      'update to do from service id = ' +
+      id +
+      ' title = ' +
+      title +
+      ' desc = ' +
+      description
+    );
+  }
+  DeleteTodo(id: string) {
+    return 'delete to do from service id = ' + id;
   }
 }
